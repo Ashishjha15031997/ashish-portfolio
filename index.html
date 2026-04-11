@@ -3,107 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ashish Jha | ML & Signal Processing</title>
-<link rel="stylesheet" href="style.css">
+<title>Ashish Jha | ML Researcher</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{margin:0;font-family:'Inter';background:#020617;color:#e2e8f0}
+nav{display:flex;justify-content:space-between;padding:20px 60px;position:fixed;width:100%;background:rgba(2,6,23,0.7);backdrop-filter:blur(12px);z-index:100}
+nav a{margin-left:25px;color:#cbd5f5;text-decoration:none}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.hero img{width:150px;border-radius:50%;border:3px solid #38bdf8}
+.hero h1{font-size:3.8rem;margin:10px 0}
+.hero h2{color:#38bdf8}
+.hero p{max-width:650px;color:#94a3b8}
+.btn{padding:12px 26px;margin:10px;border-radius:8px;text-decoration:none;font-weight:600}
+.primary{background:linear-gradient(135deg,#38bdf8,#0ea5e9);color:black}
+.secondary{border:1px solid #38bdf8;color:#38bdf8}
+section{padding:110px 20px;max-width:1100px;margin:auto}
+.section-title{font-size:2rem;margin-bottom:20px;color:#38bdf8}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}
+.card{background:rgba(30,41,59,0.5);padding:25px;border-radius:15px;border:1px solid rgba(255,255,255,0.05);transition:.3s}
+.card:hover{transform:translateY(-12px);box-shadow:0 0 30px rgba(56,189,248,0.4)}
+.badge{display:inline-block;margin-top:10px;padding:5px 10px;background:#38bdf8;color:black;border-radius:5px;font-size:.8rem}
+.metrics{font-size:.9rem;color:#94a3b8;margin-top:8px}
+.timeline div{margin:15px 0;padding:15px;background:#1e293b;border-left:3px solid #38bdf8}
+footer{text-align:center;padding:30px;background:#020617}
+.reveal{opacity:0;transform:translateY(40px);transition:.6s}
+.reveal.active{opacity:1;transform:translateY(0)}
+</style>
 </head>
 
 <body>
 
 <nav>
-    <h2>Ashish Jha</h2>
-    <div>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-    </div>
+<h2>Ashish Jha</h2>
+<div>
+<a href="#research">Research</a>
+<a href="#projects">Projects</a>
+<a href="#publications">Publications</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</div>
 </nav>
 
 <section class="hero">
-    <h1>Hi, I'm Ashish Jha 👋</h1>
-    <h2>Machine Learning • Signal Processing • Research @ IIT Guwahati</h2>
-    <a href="#projects" class="btn">View Work</a>
-    <a href="ashish_resume.pdf" class="btn secondary" download>Download Resume</a>
+<img src="PhotoISRO.jpg">
+<h1>Ashish Jha</h1>
+<h2><span id="typing"></span></h2>
+<p>ML Researcher @ IIT Guwahati | AI for Healthcare, Public Safety & Signal Processing Systems</p>
+<div>
+<a href="#projects" class="btn primary">Explore Work</a>
+<a href="ashish_resume.pdf" class="btn secondary">CV</a>
+</div>
 </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a Junior Research Fellow at IIT Guwahati with 3+ years of experience in 
-        Signal Processing and Machine Learning. I work on real-world problems including 
-        public safety systems and medical AI such as early lung cancer detection.
-    </p>
-
-    <div class="skills">
-        <span>Python</span>
-        <span>Machine Learning</span>
-        <span>Signal Processing</span>
-        <span>TensorFlow</span>
-        <span>PyTorch</span>
-        <span>MATLAB</span>
-    </div>
+<section id="research" class="reveal">
+<h2 class="section-title">Research Focus</h2>
+<p>Bridging machine learning with real-world systems including healthcare diagnostics, intelligent transport safety, and infrastructure analytics.</p>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
+<section id="projects" class="reveal">
+<h2 class="section-title">Selected Projects</h2>
+<div class="grid">
 
-    <div class="grid">
+<div class="card">
+<img src="image.png" style="width:100%;border-radius:10px">
+<h3>Path Rakshak</h3>
+<p>Real-time ML driver monitoring system.</p>
+<div class="metrics">Real-time inference • Edge AI • Safety analytics</div>
+<a href="https://github.com/ashu_iitg" target="_blank">View Code →</a>
+<span class="badge">Ongoing</span>
+</div>
 
-        <div class="card">
-            <h3>🚗 Path Rakshak</h3>
-            <p>ML-based system for public transport safety using real-time monitoring.</p>
-        </div>
+<div class="card">
+<h3>Lung Cancer Detection</h3>
+<p>Deep learning for early-stage diagnosis.</p>
+<div class="metrics">Medical imaging • CNN models • Clinical data</div>
+<a href="https://github.com/ashu_iitg" target="_blank">View Code →</a>
+<span class="badge">Healthcare AI</span>
+</div>
 
-        <div class="card">
-            <h3>🧠 Lung Cancer Detection</h3>
-            <p>AI model for early diagnosis in collaboration with cancer institute.</p>
-        </div>
+<div class="card">
+<h3>SPoTMAn</h3>
+<p>GUI-based signal processing software.</p>
+<div class="metrics">Modal analysis • MATLAB + Python</div>
+<a href="https://github.com/ashu_iitg" target="_blank">View Code →</a>
+<span class="badge">Software</span>
+</div>
 
-        <div class="card">
-            <h3>📊 SPoTMAn</h3>
-            <p>Signal Processing Toolbox for Modal Analysis (GUI-based software).</p>
-        </div>
-
-    </div>
+</div>
 </section>
 
-<section id="experience">
-    <h2>Experience</h2>
-
-    <div class="timeline">
-        <div>
-            <h3>IIT Guwahati</h3>
-            <p>Research Assistant (2022–2025)</p>
-        </div>
-
-        <div>
-            <h3>Super 20 Program</h3>
-            <p>Math Faculty (IIT-JEE Training)</p>
-        </div>
-
-        <div>
-            <h3>LearnHill Technologies</h3>
-            <p>Student Mentor (Govt. Projects)</p>
-        </div>
-    </div>
-
+<section id="publications" class="reveal">
+<h2 class="section-title">Publications</h2>
+<p>Coming soon. (Preparing research manuscripts in ML & Signal Processing)</p>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: ashish.jha@iitg.ac.in</p>
+<section id="experience" class="reveal">
+<h2 class="section-title">Experience</h2>
+<div class="timeline">
+<div><h3>IIT Guwahati</h3><p>Research Assistant – ML & Signal Processing</p></div>
+<div><h3>Super 20</h3><p>Mathematics Faculty</p></div>
+<div><h3>LearnHill</h3><p>Govt. Project Mentor</p></div>
+</div>
+</section>
 
-    <div class="socials">
-        <a href="https://github.com/ashu_iitg"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/ajbs25012002/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/@acadvijaypath/"><i class="fab fa-youtube"></i></a>
-    </div>
+<section id="contact" class="reveal">
+<h2 class="section-title">Contact</h2>
+<p>ashish.jha@iitg.ac.in</p>
+<div>
+<a href="https://github.com/ashu_iitg"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/ajbs25012002/"><i class="fab fa-linkedin"></i></a>
+<a href="https://www.youtube.com/@acadvijaypath/"><i class="fab fa-youtube"></i></a>
+</div>
 </section>
 
 <footer>
-    <p>© 2026 Ashish Jha | IIT Guwahati</p>
+<p>© 2026 Ashish Jha | ML Research Portfolio</p>
 </footer>
+
+<script>
+const text=["ML Researcher","AI Engineer","Signal Processing Specialist"];
+let i=0,j=0,current="",isDeleting=false;
+function type(){
+if(!isDeleting&&j<=text[i].length){current=text[i].substring(0,j++)}
+else if(isDeleting&&j>=0){current=text[i].substring(0,j--)}
+document.getElementById("typing").innerText=current;
+if(j===text[i].length)isDeleting=true;
+if(j===0&&isDeleting){isDeleting=false;i=(i+1)%text.length}
+setTimeout(type,90)}
+type();
+
+const reveals=document.querySelectorAll(".reveal");
+window.addEventListener("scroll",()=>{
+reveals.forEach(el=>{
+if(el.getBoundingClientRect().top<window.innerHeight-100){el.classList.add("active")}})
+});
+</script>
 
 </body>
 </html>
